@@ -880,50 +880,6 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
---- !u!1 &447340684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 447340686}
-  - component: {fileID: 447340687}
-  m_Layer: 0
-  m_Name: Streamed Multiplayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &447340686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447340684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &447340687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447340684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23afd5e76ae44d1aaf3892dbb6a97293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &490149784
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +926,46 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: SceneObjectIDMapSceneAsset
   m_Namespace: UnityEngine.Rendering.HighDefinition
+--- !u!1 &609383805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609383807}
+  - component: {fileID: 609383806}
+  m_Layer: 0
+  m_Name: Audio Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &609383806
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609383805}
+  m_Enabled: 1
+--- !u!4 &609383807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609383805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &630381445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,6 +1151,16 @@ PrefabInstance:
     - target: {fileID: 981562436606854137, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_AudioListener
+      value: 
+      objectReference: {fileID: 609383806}
+    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_StreamInEditMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 981562436653888498, guid: b31d36e50bea89442b82e4097c9a4319,
@@ -1912,7 +1918,7 @@ RectTransform:
   m_Children:
   - {fileID: 736845344}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2822,7 +2828,7 @@ PrefabInstance:
     - target: {fileID: 981562435758157006, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 0.5652174
+      value: 1.740458
       objectReference: {fileID: 0}
     - target: {fileID: 981562435758157007, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
@@ -2913,6 +2919,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_AudioListener
+      value: 
+      objectReference: {fileID: 609383806}
+    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_StreamInEditMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_EnableStreamingInEditor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2490129800671822229, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}

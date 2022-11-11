@@ -2,6 +2,8 @@
 
 Use this project as a starting point for developing interactives with AppMana.
 
+This is a multiplayer scene where two players move around marbles.
+
 ### Getting Started
 
  1. Download the prerequisites.
@@ -40,7 +42,7 @@ repository. You will receive a URL with your project.
 
 ### Unsupported Features
 
- - You must use InputSystem (`"com.unity.inputsystem": "1.3.0"`). `Input.mousePosition` and other legacy input 
+ - You must use InputSystem (`"com.unity.inputsystem": "1.4.1"`). `Input.mousePosition` and other legacy input 
 approaches are **not supported**. See [here for migration 
 tips](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/Migration.html).
  - Do not use **Screen** properties. There is no physical display when streaming.
