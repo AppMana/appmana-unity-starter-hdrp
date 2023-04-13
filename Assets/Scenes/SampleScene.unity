@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 410087040}
-  m_IndirectSpecularColor: {r: 0.7426213, g: 0.72285664, b: 0.724031, a: 1}
+  m_IndirectSpecularColor: {r: 0.74336946, g: 0.7235929, b: 0.72473013, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1016,7 +1016,7 @@ PrefabInstance:
     - target: {fileID: 981562435758157006, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 0.73480666
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 981562435758157007, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
@@ -1158,11 +1158,6 @@ PrefabInstance:
       propertyPath: m_AudioListener
       value: 
       objectReference: {fileID: 609383806}
-    - target: {fileID: 981562436606854141, guid: b31d36e50bea89442b82e4097c9a4319,
-        type: 3}
-      propertyPath: m_StreamInEditMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 981562436653888498, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
       propertyPath: m_Layer
@@ -2828,7 +2823,7 @@ PrefabInstance:
     - target: {fileID: 981562435758157006, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.740458
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 981562435758157007, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
@@ -2849,6 +2844,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 6.9162596e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 981562436503406000, guid: b31d36e50bea89442b82e4097c9a4319,
+        type: 3}
+      propertyPath: m_text
+      value: 'Player 1
+
+        To Visualize P2
+
+        Create New Game Tab
+
+        Set
+        Display To 2'
       objectReference: {fileID: 0}
     - target: {fileID: 981562436503406002, guid: b31d36e50bea89442b82e4097c9a4319,
         type: 3}
